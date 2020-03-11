@@ -5,8 +5,14 @@ This python script extract data form LWG website about water values. Downloads a
 
 ## Development
 
-Note: Python 3 only!
-Python script has some dependencies, installation with command below.
+Dependencies:
+
+ * OpenCV
+ * Ghostscript
+ * Python3
+ * Python3-tk
+
+Python script has some dependencies, installation with commands below.
 
 ```shell
 # create python virutal environment

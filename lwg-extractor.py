@@ -81,14 +81,14 @@ def make_dict(raw_values: list) -> dict:
     """
     data = {}
     if len(raw_values) == 8:
-        data["haerte"] = parse_numbers(raw_values[0])
-        data["calcium"] = parse_numbers(raw_values[1])
         data["magnesium"] = parse_numbers(raw_values[2])
+        data["sulfat"] = parse_numbers(raw_values[7])
         data["natrium"] = parse_numbers(raw_values[3])
-        data["kalium"] = parse_numbers(raw_values[4])
         data["chlorid"] = parse_numbers(raw_values[5])
+        data["calcium"] = parse_numbers(raw_values[1])
+        data["kalium"] = parse_numbers(raw_values[4])
         data["nitrat"] = parse_numbers(raw_values[6])
-        data["sulfit"] = parse_numbers(raw_values[7])
+        data["hardness"] = parse_numbers(raw_values[0])
     else:
         log.error("Can't handle input data")
     return data
